@@ -33,7 +33,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  build-tst:
     runs-on: ubuntu-latest
 
     steps:
@@ -69,13 +69,13 @@ jobs:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
 
-  deploy:
+  deploy-tst:
     permissions:
       contents: none
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-tst
     environment:
-      name: 'Development'
+      name: 'Testing'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
