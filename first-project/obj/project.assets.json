@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\my folder\\devops-task\\first-project\\first-project.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\devops\\devops-task\\first-project\\first-project.csproj",
       "projectName": "first-project",
-      "projectPath": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\my folder\\devops-task\\first-project\\first-project.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\devops\\devops-task\\first-project\\first-project.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\my folder\\devops-task\\first-project\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\MS SE 1st semester\\Devops\\devops\\devops-task\\first-project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
