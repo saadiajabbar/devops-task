@@ -55,6 +55,9 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
         working-directory: "./first-project"
+      - name: Testing 
+        run: dotnet test --no-build --verbosity normal 
+        working-directory: "./first-projectTests"
         
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
@@ -84,12 +87,12 @@ jobs:
       
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.MY_JSON_SECRET }}
+          creds: ${{ secrets.SAADIA_JSON }}
           
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.PUBLISH_PROFILE_SECRET }}
+          publish-profile: ${{ secrets.SAADIA_PROFILE }}
           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
